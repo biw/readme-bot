@@ -1,0 +1,26 @@
+{
+  "name": "make-github-readmes-great-again",
+  "version": "1.0.0",
+  "description": "A github bot that corrects errors in readme files and makes a pull request with the changes",
+  "main": "rewriter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/719Ben/make-github-readmes-great-again.git"
+  },
+  "keywords": [
+    "github",
+    "bot"
+  ],
+  "author": "Ben Williams @719ben",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/719Ben/make-github-readmes-great-again/issues"
+  },
+  "homepage": "https://github.com/719Ben/make-github-readmes-great-again#readme",
+  "dependencies": {
+    "github": "^9.2.0"
+  }
+}
