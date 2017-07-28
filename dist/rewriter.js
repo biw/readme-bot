@@ -36,7 +36,7 @@ const cleanupReadme = (newContent, sha, filepath, branch, owner, repo) => {
         return
       }
 
-      let requestBody = 'Hello,\nI am a bot that helps clean up GitHub Repo README header tags. A while ago GitHub changed their markdown render engine and all markdown # tags without a space now break. Let me know if you have any questions!'
+      let requestBody = 'Hello,\nI am a bot that helps clean up GitHub Repo README header tags. A while ago GitHub changed their markdown render engine and all markdown # tags without a space now break. Let me know if you have any questions!\n[source code](https://github.com/719Ben/readme-bot)'
 
       github.pullRequests.create({
         owner: owner,
@@ -59,7 +59,7 @@ const cleanupReadme = (newContent, sha, filepath, branch, owner, repo) => {
 const checkRepo = (owner, repo) => {
   github.authenticate({
     type: 'token',
-    token: ''
+    token: process.argv[3]
   })
 
   github.repos.getReadme({
@@ -88,7 +88,7 @@ const checkRepo = (owner, repo) => {
   })
 }
 
-let username = 'agent-reed'
+let username = process.argv[2]
 
 github.repos.getForUser({
   username
