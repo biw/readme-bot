@@ -4,7 +4,7 @@
   "description": "A github bot that corrects errors in readme files and makes a pull request with the changes",
   "main": "rewriter.js",
   "scripts": {
-    "fix": "node ./dist/rewriter.js",
+    "fix": "node ./src/rewriter.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
